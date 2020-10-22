@@ -33,3 +33,11 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Checkin(models.Model):
+    "Generated Model"
+    progressed = models.TextField()
+    blocked = models.TextField()
+    next_steps = models.TextField()
+    other_notes = models.TextField()
