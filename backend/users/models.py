@@ -15,6 +15,14 @@ class User(AbstractUser):
         null=True,
         blank=True,
     )
+    aspiration = models.TextField(
+        null=True,
+        blank=True,
+    )
+    location = models.TextField(
+        null=True,
+        blank=True,
+    )
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
